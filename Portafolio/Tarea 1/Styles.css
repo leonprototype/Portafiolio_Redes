@@ -1,0 +1,210 @@
+.estilo1{
+    color:blue;
+     font-size: 30px;
+     text-align: center;
+     font.family:'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif;
+      background-color: cornsilk;
+}
+.estilo2{
+    color: aqua;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aquamarine;
+}
+.estilo3{
+    color: blueviolet;
+    font-size: 35px;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+.estilo4{
+    color: dimgrey;
+    font-size: 43px;
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: slategray;
+}
+.estilo5{
+    color: snow;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: midnightblue;
+}
+.estilo6{
+    color: darkgoldenrod;
+    font-size: 50px;
+    text-align: unset;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blue;
+}
+.estilo7{
+    color: seagreen;
+    font-size: 63px;
+    text-align: initial;
+    font-family: sans-serif;
+    background-color: khaki;
+}
+.estilo8{
+    color: springgreen;
+    font-size: 20px;
+    text-align: calc(3);
+    font-family: sans-serif;
+    background-color: forestgreen;
+}
+.estilo9{
+    color: rgb(71, 112, 92);
+    font-size: 67px;
+    text-align:initial;
+    font-family:'Courier New', Courier, monospace;
+    background-color:tomato;
+}
+.estilo10{
+    color:tomato;
+    font-size: 90px;
+    text-align:justify;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:silver;
+}
+.estilo11{
+    color:lightgoldenrodyellow;
+    font-size: 40px;
+    text-align:initial;
+    font-family:initial;
+    background-color:darkturquoise;
+}
+.estilo12{
+    color:darkslategrey;
+    font-size: 75px;
+    text-align:unset;
+    font-family:unset;
+    background-color:deeppink;
+}
+.estilo13{
+    color:currentColor;
+    font-size: 23px;
+    text-align:calc(45);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:lightslategray;
+}
+.estilo14{
+    color:currentColor;
+    font-size: 46px;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    background-color:purple;
+}
+.estilo15{
+    color:cadetblue;
+    font-size: 76px;
+    text-align:calc(23);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:darkviolet;
+}
+.estilo16{
+    color:rgb(71, 112, 92);
+    font-size: 56px;
+    text-align:right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:calc(34);
+}
+.estilo17{
+    color:darkslategrey;
+    font-size: 75px;
+    text-align:unset;
+    font-family:unset;
+    background-color:deeppink;
+}
+.estilo18{
+    color:goldenrod;
+    font-size: 65px;
+    text-align:inherit;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:aliceblue;
+}
+.estilo19{
+    color:azure;
+    font-size: 65px;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+    background-color:calc(4);
+}
+.estilo20{
+    color:aquamarine;
+    font-size: 57px;
+    text-align:left;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:chartreuse;
+}
+.estilo21{
+    color:greenyellow;
+    font-size: 21px;
+    text-align:end;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:lightseagreen;
+}
+.estilo22{
+    color:slateblue;
+    font-size: 12px;
+    text-align:unset;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:burlywood;
+}
+.estilo23{
+    color:darkblue;
+    font-size: 51px;
+    text-align:left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:dodgerblue;
+}
+.estilo24{
+    color:darkkhaki;
+    font-size: 41px;
+    text-align:left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:blue;
+}
+.estilo25{
+    color:azure;
+    font-size: 62px;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    background-color:aqua;
+}
+.estilo26{
+    color:blue;
+    font-size: 56px;
+    text-align:end;
+    font-family:'Courier New', Courier, monospace;
+    background-color:azure;
+}
+.estilo27{
+    color:azure;
+    font-size: 35px;
+    text-align:inherit;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:blueviolet;
+}
+.estilo28{
+    color:cornflowerblue;
+    font-size: 57px;
+    text-align:start;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:darkgrey;
+}
+.estilo29{
+    color:currentColor;
+    font-size: 84px;
+    text-align:initial;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:lightgrey;
+}
+.estilo30{
+    color:darkmagenta;
+    font-size: 45px;
+    text-align:inherit;
+    font-family:fantasy;
+    background-color:tan;
+}

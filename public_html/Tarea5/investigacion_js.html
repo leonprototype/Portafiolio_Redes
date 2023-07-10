@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigacion JS</title>
+    <script>
+        function validarFormulario() {
+            // Obtener los valores ingresados por el usuario
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+
+            // Validar que se haya ingresado un nombre y un email
+            if (nombre === '' || email === '') {
+                alert('Por favor, complete todos los campos');
+                return false; // Detener el envío del formulario
+            }
+
+            // Validar el formato del email utilizando una expresión regular
+            var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!email.match(emailRegex)) {
+                alert('Por favor, ingrese un email válido');
+                return false; // Detener el envío del formulario
+            }
+
+            // Si todas las validaciones pasan, se puede enviar el formulario
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>¿Qué hace la etiqueta input de HTML y como se utilizan?</h1>
+        <p>La etiqueta &lt;input&gt; de HTML se utiliza para crear un campo de entrada interactivo en un formulario web. Permite a los
+        usuarios ingresar y enviar datos al servidor a través del formulario. La etiqueta &lt;input&gt; tiene varios tipos de
+        atributos que determinan su comportamiento y apariencia.
+        
+        Aquí hay algunos atributos comunes utilizados con la etiqueta &lt;input&gt;:
+        
+        type: especifica el tipo de campo de entrada, como texto, contraseña, número, checkbox, radio, etc.
+        name: establece el nombre del campo de entrada, que se utiliza para identificar los datos enviados al servidor.
+        value: define el valor predeterminado o inicial del campo de entrada.
+        placeholder: muestra un texto de ejemplo dentro del campo de entrada para guiar al usuario.
+        required: especifica que el campo de entrada debe ser completado antes de enviar el formulario.
+        readonly: hace que el campo de entrada sea de solo lectura, lo que significa que el usuario no puede editarlo.
+        disabled: deshabilita el campo de entrada, lo que impide que el usuario lo edite o lo envíe.</p>
+
+    <h1>Desarrolla en tu pagina web un ejemplo de un formulario utilizando la etiqueta input</h1>
+    
+        <h2>Formulario de Registro</h2>
+            <form action="/procesar" method="post" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+            
+                <input type="submit" value="Enviar">
+            </form>
+
+        <p>En este ejemplo, se utiliza JavaScript para realizar algunas validaciones en el formulario. La función
+        validarFormulario() se ejecuta cuando el usuario intenta enviar el formulario. Comprueba que el nombre y el email se
+        hayan ingresado y valida el formato del email utilizando una expresión regular.
+        
+        Si alguna de las validaciones falla, se muestra una alerta al usuario y el formulario no se envía. Si todas las
+        validaciones pasan, el formulario se envía al servidor para su procesamiento.</p>
+    
+    <h1>¿Qué es el lenguaje JavaScript?</h1>
+
+            <p>JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. Fue creado originalmente
+            para ser utilizado en el navegador web y permite agregar interactividad y funcionalidad a las páginas web.
+            
+            A diferencia de HTML y CSS, que se utilizan para estructurar y dar estilo a los contenidos web, JavaScript se enfoca en
+            la programación y manipulación de elementos en la página. Con JavaScript, se pueden realizar acciones como validar
+            formularios, crear animaciones, modificar el contenido de la página dinámicamente, interactuar con el usuario, realizar
+            peticiones a servidores, entre otras cosas.
+
+            JavaScript es un lenguaje versátil y flexible, con una amplia variedad de bibliotecas y frameworks disponibles que
+            facilitan el desarrollo de aplicaciones más complejas. Es compatible con la mayoría de los navegadores web modernos y su
+            sintaxis se basa en ECMAScript, el estándar en el que se basa el lenguaje.</p>
+    
+    <h1>¿Para qué sirve el leguaje JS?</h1>
+            <p>El lenguaje JavaScript se utiliza principalmente para agregar interactividad y funcionalidad a las páginas web. Algunas
+            de las principales funciones de JavaScript son:</p>
+            <ul>
+            <li><strong>Interactividad del lado del cliente:</strong> JavaScript permite crear elementos interactivos en una página web y responder a las
+            acciones del usuario, como hacer clic en un botón, mover el mouse, ingresar texto en un formulario, etc. Esto mejora la
+            experiencia del usuario al hacer que la página web sea más dinámica y receptiva.</li>
+            
+            <li><strong>Manipulación del contenido HTML:</strong> JavaScript permite acceder y modificar el contenido HTML de una página web en tiempo
+            real. Esto incluye cambiar el texto, agregar o eliminar elementos, modificar estilos, mostrar u ocultar elementos, entre
+            otros. Con JavaScript, se pueden realizar cambios en la estructura y el aspecto de la página sin tener que volver a
+            cargarla.</li>
+            
+            <li><strong>Validación de formularios:</strong> JavaScript se utiliza para realizar validaciones en formularios web. Puede verificar si los
+            campos obligatorios están completos, validar formatos de entrada (como direcciones de correo electrónico o números de
+            teléfono), realizar cálculos automáticos y mostrar mensajes de error o confirmación en función de los datos ingresados.</li>
+            
+            <li><strong>Manipulación de eventos:</strong> JavaScript permite capturar eventos del navegador, como hacer clic en un elemento, mover el
+            mouse, presionar una tecla, etc. Esto permite realizar acciones específicas cuando se produce un evento, como ejecutar
+            una función, cambiar el contenido de la página, enviar datos al servidor, etc.</li>
+            
+            <li><strong>Comunicación con el servidor:</strong> JavaScript puede realizar solicitudes al servidor web utilizando tecnologías como AJAX
+            (Asynchronous JavaScript and XML) para enviar y recibir datos en segundo plano sin tener que recargar la página
+            completa. Esto permite crear aplicaciones web más dinámicas y fluidas.</li>
+            </ul>
+    
+    <h1>¿A qué se refiere el DOM (Document Object Model) en el desarrollo Web?</h1>
+
+    <p>El DOM (Document Object Model) es una representación estructurada y jerárquica de un documento HTML en forma de un
+        árbol de objetos. Permite acceder y manipular los elementos y contenido de una página web mediante scripts o código
+        JavaScript. El DOM proporciona una interfaz que permite a los desarrolladores acceder, modificar, agregar o eliminar
+        elementos y atributos de una página web de forma dinámica.</p>
+
+    <h1>¿Cuál es la diferencia entre los archivos HTML, CSS y JS?</h1>
+
+    <p>Los archivos HTML (Hypertext Markup Language) se utilizan para estructurar el contenido y la semántica de una página
+        web. Los archivos CSS (Cascading Style Sheets) se utilizan para definir el estilo y la presentación visual de una
+        página web. Los archivos JS (JavaScript) se utilizan para agregar interactividad y funcionalidad a una página web
+        mediante la manipulación del contenido y la respuesta a eventos.</p>
+
+    <h1>¿Para qué sirve la etiqueta &lt;script&gt;?</h1>
+
+    <p>La etiqueta &lt;script&gt; se utiliza para incluir o hacer referencia a código JavaScript en una página web. Puede
+        colocarse en el encabezado (&lt;head&gt;) o en el cuerpo (&lt;body&gt;) del documento HTML. Permite ejecutar
+        instrucciones o cargar archivos externos de JavaScript para agregar funcionalidad dinámica a la página web.</p>
+
+    <h1>¿En qué consisten los 3 métodos para cambiar elementos tipo Tag Name, ID y Class Name con JS?</h1>
+
+    <p>Para cambiar elementos mediante JavaScript, se pueden utilizar los siguientes métodos:</p>
+    <ul>
+        <li><strong>getElementById:</strong> Permite seleccionar un elemento por su ID único.</li>
+        <li><strong>getElementsByTagName:</strong> Permite seleccionar elementos por su nombre de etiqueta (como "div", "p",
+            "a", etc.) y devuelve una lista de elementos.</li>
+        <li><strong>getElementsByClassName:</strong> Permite seleccionar elementos por su nombre de clase y devuelve una
+            lista de elementos que tienen esa clase.</li>
+    </ul>
+
+    <h1>¿Cuál es la sintaxis de la programación en JS?</h1>
+
+    <p>La sintaxis básica de la programación en JavaScript sigue un formato similar a muchos otros lenguajes de
+        programación. Aquí tienes un ejemplo de la estructura básica de un script en JavaScript:</p>
+    <pre>
+      <code>
+        &lt;script type="text/javascript"&gt;
+          // Aquí va tu código JavaScript
+        &lt;/script&gt;
+      </code>
+    </pre>
+    <h1>¿Cómo se declaran variables en JS?</h1>
+
+    <p>En JavaScript, se pueden declarar variables utilizando la palabra clave <strong>var</strong>, <strong>let</strong> o
+        <strong>const</strong>. Por ejemplo:</p>
+    <pre>
+      <code>
+        var nombre = "Juan";
+        let edad = 25;
+        const PI = 3.14;
+      </code>
+    </pre>
+    <h1>¿Cómo se declaran funciones en JS?</h1>
+    <p>Las funciones en JavaScript se pueden declarar de la siguiente manera:</p>
+    <pre>
+      <code>
+        function nombreFuncion(parametros) {
+          // Código de la función
+        }
+      </code>
+    </pre>
+    <h1>¿Cómo se llaman funciones en JS?</h1>
+    <p>Para llamar a una función en JavaScript, simplemente se utiliza su nombre seguido de paréntesis. Por ejemplo:</p>
+    <pre>
+      <code>
+        nombreFuncion(parametros);
+      </code>
+    </pre>
+
+    <h1>¿Cómo se declara una función interna de un HTML con JS y cómo se declara un documento externo con JS?</h1>
+
+    <p>Para declarar una función interna en HTML con JavaScript, se puede utilizar el atributo <strong>onclick</strong> en
+        un elemento HTML, como un botón. Por ejemplo:</p>
+
+    <pre>
+      <code>
+        &lt;button onclick="nombreFuncion()"&gt;Haz clic&lt;/button&gt;
+      </code>
+    </pre>
+    <p>Para declarar un documento externo con JavaScript, se utiliza la etiqueta &lt;script&gt; con el atributo
+        <strong>src</strong> para indicar la ruta del archivo externo de JavaScript. Por ejemplo:</p>
+    <pre>
+      <code>
+        &lt;script src="archivo.js"&gt;&lt;/script&gt;
+      </code>
+    </pre>
+
+    <h1>¿Cuáles ciclos de programación están disponibles en JS?</h1>
+
+    <p>En JavaScript, existen varios ciclos de programación para controlar la repetición de bloques de código. Algunos de
+        los ciclos más comunes son:</p>
+
+    <ul>
+        <li><strong>for:</strong> Permite repetir un bloque de código un número específico de veces.</li>
+        <li><strong>while:</strong> Permite repetir un bloque de código mientras una condición sea verdadera.</li>
+        <li><strong>do-while:</strong> Permite repetir un bloque de código al menos una vez y luego mientras una condición
+            sea verdadera.</li>
+    </ul>
+
+    <h1>¿Cuáles funciones de condicional están disponibles en JS?</h1>
+
+    <p>JavaScript ofrece varias funciones de condicional para tomar decisiones en base a condiciones. Algunas de las
+        funciones más utilizadas son:</p>
+
+    <ul>
+        <li><strong>if:</strong> Permite ejecutar un bloque de código si una condición es verdadera.</li>
+        <li><strong>else:</strong> Permite ejecutar un bloque de código alternativo si la condición de un
+            <strong>if</strong> no se cumple.</li>
+        <li><strong>else if:</strong> Permite evaluar múltiples condiciones en secuencia.</li>
+
+    <h1>Elabora en Replit un programa básico “Hola mundo” con JS, describe el funcionamiento y elementos utilizados.</h1>
+        <iframe width="100%" height="600px" src="https://replit.com/@leonprototype/HolaMundoJS?v=1#script.js"></iframe>
+    
+</body>
+</html>
